@@ -1,0 +1,35 @@
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
+  .calculate {
+    &-wrapper {
+      width: 400px;
+      display: flex;
+    }
+    &-keys {
+      display: flex;
+      flex-direction: row;
+    }
+    &-numbers {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &-functions {
+      display: flex;
+    }
+    &-operations {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-left-block {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
