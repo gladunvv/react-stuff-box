@@ -1,5 +1,6 @@
 import React from 'react';
 import { CalculatorKey } from '../../components/CalculatorComponents/CalculatorKey';
+import { CalculatorDisplay } from '../../components/CalculatorComponents/CalculatorDisplay';
 
 import './CalculatorPage.scss';
 
@@ -8,6 +9,7 @@ export const CalculatorPage = () => {
     <>
       <div className='calculator'>
         <div className='calculate-wrapper'>
+          <CalculatorDisplay />
           <div className='calculate-keys'>
             <div className='calculate-left-block'>
               <div className='calculate-functions'>

@@ -7,8 +7,14 @@
 
   .calculate {
     &-wrapper {
-      width: 400px;
+      width: 355px;
       display: flex;
+      flex-direction: column;
+
+      padding: 40px 10px 10px 10px;
+      
+      border: 1px solid;
+      border-radius: 13px;
     }
     &-keys {
       display: flex;
