@@ -23,7 +23,9 @@ export class CalculatorPage extends Component {
       <>
         <div className='calculator'>
           <div className='calculate-wrapper'>
-            <CalculatorDisplay />
+            <CalculatorDisplay
+              value={this.state.next || this.state.total || '0'}
+            />
             <div className='calculate-keys'>
               <div className='calculate-left-block'>
                 <div className='calculate-functions'>
@@ -110,7 +112,7 @@ export class CalculatorPage extends Component {
                 <CalculatorKey
                   clickHandler={this.handleClick}
                   typeKey='key-operations'
-                  symb='-'
+                  symb='–'
                 />
                 <CalculatorKey
                   clickHandler={this.handleClick}

@@ -74,7 +74,7 @@ export const calculate = (obj, buttonName) => {
     }
   }
 
-  if (buttonName === '+/-') {
+  if (buttonName === '±') {
     if (obj.next) {
       return { next: (-1 * parseFloat(obj.next)).toString() };
     }

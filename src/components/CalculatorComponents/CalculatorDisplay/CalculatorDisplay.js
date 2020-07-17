@@ -2,10 +2,10 @@ import React from 'react';
 
 import './CalculatorDisplay.scss';
 
-export const CalculatorDisplay = () => {
+export const CalculatorDisplay = ({ value }) => {
   return (
     <>
-      <div className='calculator-display'></div>
+      <div className='calculator-display'>{value}</div>
     </>
   );
 };
