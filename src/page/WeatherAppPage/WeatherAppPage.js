@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './WeatherAppPage.scss';
+
 export const WeatherAppPage = () => {
   return (
     <>
