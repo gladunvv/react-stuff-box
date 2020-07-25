@@ -2,9 +2,15 @@ import React from 'react';
 
 import './WeatherNav.scss';
 
-export const WeatherNav = ({ PLACES }) => {
-  const places = PLACES.map((place, index) => (
-    <li key={place.zip}>{place.name}</li>
+export const WeatherNav = ({ weatherPlaces, onSelect }) => {
+  const places = weatherPlaces.map((place, index) => (
+    <li
+      className='weather-nav__item'
+      key={place.zip}
+      onClick={() => onSelect(place.zip)}
+    >
+      {place.name}
+    </li>
   ));
-  return <ul>{places}</ul>;
+  return <ul className='weather-nav '>{places}</ul>;
 };

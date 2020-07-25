@@ -1,0 +1,21 @@
+.weather-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 0;
+
+  &__item {
+    height: 34px;
+    margin: 4px 0;
+    font-family: Alata;
+    font-weight: bold;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      font-size: 25px;
+    }
+  }
+}

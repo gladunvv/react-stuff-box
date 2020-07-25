@@ -2,3 +2,13 @@
   font-family: DIGITAL;
   src: url('./static/fonts/digital-7.ttf');
 }
+
+@font-face {
+  font-family: Luckies;
+  src: url('./static/fonts/LuckiestGuy-Regular.ttf');
+}
+
+@font-face {
+  font-family: Alata;
+  src: url('./static/fonts/Alata-Regular.ttf');
+}

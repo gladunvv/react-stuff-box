@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './WeatherDisplay.scss';
+
 export class WeatherDisplay extends Component {
   constructor() {
     super();
@@ -7,30 +9,27 @@ export class WeatherDisplay extends Component {
       weatherData: null,
     };
   }
-  componentDidMount() {
+  componentDidUpdate() {
     const zip = this.props.zip;
-    const URL =
-      'http://api.openweathermap.org/data/2.5/weather?id=' +
-      zip +
-      '&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric';
+    const URL = `http://api.openweathermap.org/data/2.5/weather?id=${zip}&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric`;
     fetch(URL)
       .then((res) => res.json())
       .then((json) => {
         this.setState({ weatherData: json });
       });
-      console.log('zip :>> ', zip);
   }
+
   render() {
     const weatherData = this.state.weatherData;
     if (!weatherData) return <div>Loading</div>;
     const weather = weatherData.weather[0];
-    const iconUrl = 'http://openweathermap.org/img/w/' + weather.icon + '.png';
+    const iconUrl = `http://openweathermap.org/img/w/${weather.icon}.png`;
     return (
-      <div>
-        <h1>
+      <div className='weather-place'>
+        <div className='weather-place__title'>
           {weather.main} in {weatherData.name}
           <img src={iconUrl} alt={weatherData.description} />
-        </h1>
+        </div>
         <p>Current: {weatherData.main.temp}°</p>
         <p>High: {weatherData.main.temp_max}°</p>
         <p>Low: {weatherData.main.temp_min}°</p>

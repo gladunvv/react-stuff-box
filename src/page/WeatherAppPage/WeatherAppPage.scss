@@ -1,0 +1,23 @@
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 20px;
+
+  &-wrapper {
+    width: 430px;
+  }
+
+  &__title {
+    font-family: Luckies;
+    margin: 10px 0;
+    width: 385px;
+    font-size: 60px;
+    background: linear-gradient(45deg, #00c6f8 20%, #c40594 60%, #ecdc03);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+}
