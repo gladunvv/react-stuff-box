@@ -2,7 +2,7 @@
   "name": "react-stuff-box",
   "version": "0.1.0",
   "private": true,
-  "homepage": "  https://gladunvv.github.io/react-stuff-box",
+  "homepage": "https://gladunvv.github.io/react-stuff-box",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
