@@ -9,6 +9,7 @@ export const Map = () => {
       <div className='map'>
         <Link to='calculator'>Calculator</Link>
         <Link to='weather'>Weather</Link>
+        <Link to='countdowntimer'>Countdown Timer</Link>
       </div>
     </>
   );
