@@ -1,1 +1,1 @@
-export * from './CountTImerPage';
+export * from './CountTimerPage';

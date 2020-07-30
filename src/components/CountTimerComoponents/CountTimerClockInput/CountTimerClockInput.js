@@ -12,7 +12,6 @@ export const CountTimerClockInput = () => {
           className='time-to'
           id='time-to'
           value=''
-          onchange='calcTime(this.value)'
         />
       </div>
     </>
