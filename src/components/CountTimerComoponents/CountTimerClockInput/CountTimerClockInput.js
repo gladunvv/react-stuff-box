@@ -8,10 +8,8 @@ export const CountTimerClockInput = () => {
       <div className='count-timer-input'>
         <input
           type='date'
-          name='time-to'
           className='time-to'
           id='time-to'
-          value=''
         />
       </div>
     </>
