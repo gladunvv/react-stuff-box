@@ -6,12 +6,10 @@ import './CountTimerPage.scss';
 
 export class CountTimerPage extends Component {
   state = {
-    timer: {
-      days: 'T',
-      hours: 'I',
-      minutes: 'M',
-      seconds: 'E',
-    },
+    days: 'T',
+    hours: 'I',
+    minutes: 'M',
+    seconds: 'E',
   };
 
   useInterval = (date) => {
@@ -29,18 +27,17 @@ export class CountTimerPage extends Component {
       if (distance < 0) {
         clearInterval(this.useInterval);
       } else {
-        this.setState({ timer: { days, hours, minutes, seconds } });
+        this.setState({ days, hours, minutes, seconds });
       }
-      console.log('time :>> ', seconds);
     }, 1000);
   };
 
   countDown = (date) => {
-    // this.useInterval(date);
+    this.useInterval(date);
   };
 
   render() {
-    const time = this.state.timer;
+    const time = this.state;
     return (
       <>
         <div className='count-timer'>
