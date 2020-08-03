@@ -6,6 +6,7 @@ import './CountTimerPage.scss';
 
 export class CountTimerPage extends Component {
   state = {
+    intervalId: '',
     days: 'T',
     hours: 'I',
     minutes: 'M',
@@ -30,9 +31,11 @@ export class CountTimerPage extends Component {
         this.setState({ days, hours, minutes, seconds });
       }
     }, 1000);
+    this.setState({ intervalId: intervalStart });
   };
 
   countDown = (date) => {
+    clearInterval(this.state.intervalId);
     this.useInterval(date);
   };
 

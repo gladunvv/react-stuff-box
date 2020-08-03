@@ -15,7 +15,7 @@ export class CountTimerClockInput extends Component {
       <>
         <div className='count-timer-input'>
           <input
-            type='date'
+            type='datetime-local'
             className='time-to'
             id='time-to'
             onChange={(event) => this.handleChange(event, startTimer)}
