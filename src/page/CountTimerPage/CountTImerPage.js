@@ -44,7 +44,7 @@ export class CountTimerPage extends Component {
     return (
       <>
         <div className='count-timer'>
-          <h1>Countdown timer page</h1>
+          <h1 className='count-timer__title'>Countdown timer page</h1>
           <CountTimerClockInput startTimer={this.countDown} />
           <CountTimerDisplay timeDown={time} />
         </div>
